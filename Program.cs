@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Blood_Bank.UI;
 
 namespace Blood_Bank
 {
@@ -16,7 +17,7 @@ namespace Blood_Bank
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new View_Patient());
+            Application.Run(new DonateBlood());
         }
     }
 }

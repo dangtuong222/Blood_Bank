@@ -69,12 +69,14 @@
     <Compile Include="Data\BloodTransferRepository.cs" />
     <Compile Include="Data\DashboardRepository.cs" />
     <Compile Include="Data\DatabaseConnection.cs" />
+    <Compile Include="Data\DonateBloodRepository.cs" />
     <Compile Include="Data\DonorRepository.cs" />
     <Compile Include="Data\PatientRepository.cs" />
     <Compile Include="Data\ViewDonorsRepository.cs" />
     <Compile Include="Data\ViewPatientsRepository.cs" />
     <Compile Include="Service\BloodStockService.cs" />
     <Compile Include="Service\BloodTransferService.cs" />
+    <Compile Include="Service\DonateBloodService.cs" />
     <Compile Include="Service\DonorService.cs" />
     <Compile Include="Service\PatientService.cs" />
     <Compile Include="Service\ViewDonorsService.cs" />
