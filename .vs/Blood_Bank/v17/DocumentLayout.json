@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Winform\\Blood_Bank\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|d:\\winform\\blood_bank\\ui\\donateblood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:ui\\donateblood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|D:\\Winform\\Blood_Bank\\ui\\donor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:ui\\donor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|D:\\Winform\\Blood_Bank\\ui\\view patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:ui\\view patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|D:\\Winform\\Blood_Bank\\ui\\view patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:ui\\view patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|D:\\Winform\\Blood_Bank\\data\\viewpatientsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:data\\viewpatientsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|D:\\Winform\\Blood_Bank\\service\\viewpatientsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:service\\viewpatientsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|D:\\Winform\\Blood_Bank\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Donor.cs [Design]",
+              "DocumentMoniker": "D:\\Winform\\Blood_Bank\\UI\\Donor.cs",
+              "RelativeDocumentMoniker": "UI\\Donor.cs",
+              "ToolTip": "D:\\Winform\\Blood_Bank\\UI\\Donor.cs [Design]",
+              "RelativeToolTip": "UI\\Donor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T15:34:22.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DonateBlood.cs [Design]",
+              "DocumentMoniker": "D:\\Winform\\Blood_Bank\\UI\\DonateBlood.cs",
+              "RelativeDocumentMoniker": "UI\\DonateBlood.cs",
+              "ToolTip": "D:\\Winform\\Blood_Bank\\UI\\DonateBlood.cs [Design]",
+              "RelativeToolTip": "UI\\DonateBlood.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T15:31:38.651Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Winform\\Blood_Bank\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Winform\\Blood_Bank\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:40:44.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "View Patients.cs",
+              "DocumentMoniker": "D:\\Winform\\Blood_Bank\\UI\\View Patients.cs",
+              "RelativeDocumentMoniker": "UI\\View Patients.cs",
+              "ToolTip": "D:\\Winform\\Blood_Bank\\UI\\View Patients.cs",
+              "RelativeToolTip": "UI\\View Patients.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwD8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:31:26.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "View Patients.cs [Design]",
+              "DocumentMoniker": "D:\\Winform\\Blood_Bank\\UI\\View Patients.cs",
+              "RelativeDocumentMoniker": "UI\\View Patients.cs",
+              "ToolTip": "D:\\Winform\\Blood_Bank\\UI\\View Patients.cs [Design]",
+              "RelativeToolTip": "UI\\View Patients.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:31:25.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ViewPatientsService.cs",
+              "DocumentMoniker": "D:\\Winform\\Blood_Bank\\Service\\ViewPatientsService.cs",
+              "RelativeDocumentMoniker": "Service\\ViewPatientsService.cs",
+              "ToolTip": "D:\\Winform\\Blood_Bank\\Service\\ViewPatientsService.cs",
+              "RelativeToolTip": "Service\\ViewPatientsService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCAAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:28:13.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ViewPatientsRepository.cs",
+              "DocumentMoniker": "D:\\Winform\\Blood_Bank\\Data\\ViewPatientsRepository.cs",
+              "RelativeDocumentMoniker": "Data\\ViewPatientsRepository.cs",
+              "ToolTip": "D:\\Winform\\Blood_Bank\\Data\\ViewPatientsRepository.cs",
+              "RelativeToolTip": "Data\\ViewPatientsRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:24:34.932Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

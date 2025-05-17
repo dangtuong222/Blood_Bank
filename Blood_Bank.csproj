@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Blood_Bank</RootNamespace>
+    <AssemblyName>Blood_Bank</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>C:\Users\nguye\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>C:\Users\nguye\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\nguye\Downloads\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\BloodStockRepository.cs" />
+    <Compile Include="Data\BloodTransferRepository.cs" />
+    <Compile Include="Data\DashboardRepository.cs" />
+    <Compile Include="Data\DatabaseConnection.cs" />
+    <Compile Include="Data\DonorRepository.cs" />
+    <Compile Include="Data\PatientRepository.cs" />
+    <Compile Include="Data\ViewDonorsRepository.cs" />
+    <Compile Include="Data\ViewPatientsRepository.cs" />
+    <Compile Include="Service\BloodStockService.cs" />
+    <Compile Include="Service\BloodTransferService.cs" />
+    <Compile Include="Service\DonorService.cs" />
+    <Compile Include="Service\PatientService.cs" />
+    <Compile Include="Service\ViewDonorsService.cs" />
+    <Compile Include="Service\ViewPatientsService.cs" />
+    <Compile Include="UI\Blood Stockc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Blood Stockc.Designer.cs">
+      <DependentUpon>Blood Stockc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Blood Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Blood Transfer.Designer.cs">
+      <DependentUpon>Blood Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DonateBlood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DonateBlood.Designer.cs">
+      <DependentUpon>DonateBlood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Donor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Donor.Designer.cs">
+      <DependentUpon>Donor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mainform.Designer.cs">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\View Donors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\View Donors.Designer.cs">
+      <DependentUpon>View Donors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\View Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\View Patients.Designer.cs">
+      <DependentUpon>View Patients.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Blood Stockc.resx">
+      <DependentUpon>Blood Stockc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Blood Transfer.resx">
+      <DependentUpon>Blood Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DonateBlood.resx">
+      <DependentUpon>DonateBlood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Donor.resx">
+      <DependentUpon>Donor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mainform.resx">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\View Donors.resx">
+      <DependentUpon>View Donors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\View Patients.resx">
+      <DependentUpon>View Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="source\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
