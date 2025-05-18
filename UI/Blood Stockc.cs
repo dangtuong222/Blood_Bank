@@ -2,19 +2,43 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Blood_Bank.Service;
 
 namespace Blood_Bank
 {
     public partial class Blood_Stockcs : Form
     {
+        private readonly BloodStockService _service;
         public Blood_Stockcs()
         {
             InitializeComponent();
+            _service = new BloodStockService();
+            LoadBloodStock();
+
+
+        }
+        
+        private void LoadBloodStock()
+        {
+            try
+            {
+                DataTable dt = _service.GetBloodStock();
+                BloodStockDGV.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading blood stock: " + ex.Message);
+            }
+        }
+        private void Blood_Stockcs_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
