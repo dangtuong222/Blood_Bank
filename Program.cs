@@ -17,7 +17,7 @@ namespace Blood_Bank
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Blood_Transfer());
+            Application.Run(new Employee());
         }
     }
 }

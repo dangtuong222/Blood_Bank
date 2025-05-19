@@ -22,3 +22,4 @@ D:\Winform\Blood_Bank\obj\Debug\Blood_Bank.Blood_Stockcs.resources
 D:\Winform\Blood_Bank\obj\Debug\Blood_Bank.Blood_Transfer.resources
 D:\Winform\Blood_Bank\obj\Debug\Blood_Bank.Dashboard.resources
 D:\Winform\Blood_Bank\obj\Debug\Blood_Bank.UI.DonateBlood.resources
+D:\Winform\Blood_Bank\obj\Debug\Blood_Bank.UI.Employee.resources
