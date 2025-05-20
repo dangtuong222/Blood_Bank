@@ -9,17 +9,19 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Blood_Bank.Service;
 
 namespace Blood_Bank.UI
 {
     public partial class Employee : Form
     {
+        private readonly EmployeeService _service;
         public Employee()
         {
             InitializeComponent();
+            _service = new EmployeeService();
             populate();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=BloodBankDb;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;MultiSubnetFailover=False");
         
         private void reset()
         {
@@ -29,38 +31,29 @@ namespace Blood_Bank.UI
 
         private void populate()
         {
-            con.Open();
-            string query = "select * from EmployeeTbl";
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            EmpDGV.DataSource = ds.Tables[0];
-            con.Close();
+            try
+            {
+                DataTable dt = _service.GetEmployees();
+                EmpDGV.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading employees: " + ex.Message);
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            if(EmpNameTb.Text =="" || EmpPassTb.Text == "") 
+            try
             {
-                MessageBox.Show("Missing Information");
+                _service.AddEmployee(EmpNameTb.Text, EmpPassTb.Text);
+                MessageBox.Show("Employee Successfully Saved");
+                reset();
+                populate();
             }
-            else
+            catch (Exception ex)
             {
-                try
-                {
-                    string query = "insert into EmployeeTbl (EmpId, EmpPass) values('" + EmpNameTb.Text +"','"+ EmpPassTb.Text+"')";
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.ExecuteNonQuery();  
-                    MessageBox.Show("Employee Successfully Saved");
-                    con.Close();
-                    reset();
-                }   
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -69,6 +62,11 @@ namespace Blood_Bank.UI
             Login log = new Login();
             log.Show();
             this.Hide();
+        }
+
+        private void Employee_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

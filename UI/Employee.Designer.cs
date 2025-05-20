@@ -431,6 +431,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employee";
             this.Text = "Employee";
+            this.Load += new System.EventHandler(this.Employee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.EmpDGV)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

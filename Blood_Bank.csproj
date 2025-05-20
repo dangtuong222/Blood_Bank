@@ -71,16 +71,27 @@
     <Compile Include="Data\DatabaseConnection.cs" />
     <Compile Include="Data\DonateBloodRepository.cs" />
     <Compile Include="Data\DonorRepository.cs" />
+    <Compile Include="Data\EmployeeRepository.cs" />
+    <Compile Include="Data\LoginRepository.cs" />
     <Compile Include="Data\PatientRepository.cs" />
     <Compile Include="Data\ViewDonorsRepository.cs" />
     <Compile Include="Data\ViewPatientsRepository.cs" />
     <Compile Include="Service\BloodStockService.cs" />
     <Compile Include="Service\BloodTransferService.cs" />
+    <Compile Include="Service\DashboardService.cs" />
     <Compile Include="Service\DonateBloodService.cs" />
     <Compile Include="Service\DonorService.cs" />
+    <Compile Include="Service\EmployeeService.cs" />
+    <Compile Include="Service\LoginService.cs" />
     <Compile Include="Service\PatientService.cs" />
     <Compile Include="Service\ViewDonorsService.cs" />
     <Compile Include="Service\ViewPatientsService.cs" />
+    <Compile Include="UI\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Blood Stockc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +172,9 @@
     <Compile Include="UI\View Patients.Designer.cs">
       <DependentUpon>View Patients.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Blood Stockc.resx">
       <DependentUpon>Blood Stockc.cs</DependentUpon>
     </EmbeddedResource>

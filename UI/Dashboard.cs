@@ -16,5 +16,10 @@ namespace Blood_Bank
         {
             InitializeComponent();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
