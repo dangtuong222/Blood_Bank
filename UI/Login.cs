@@ -37,6 +37,7 @@ namespace Blood_Bank
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("Login button clicked");
             try
             {
                 bool isValid = _service.AuthenticateEmployee(EmpIdTb.Text, EmpPassTb.Text);
