@@ -44,26 +44,31 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.DonorLbl = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.TransferLbl = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.UserLbl = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
-            this.guna2CircleProgressBar2 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
-            this.guna2CircleProgressBar3 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
-            this.guna2CircleProgressBar4 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.OPlusProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.ABPlusProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.OMinusProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.ABMinusProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.Label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.OPlusNum = new System.Windows.Forms.Label();
+            this.TotalLbl = new System.Windows.Forms.Label();
+            this.ABPlusNum = new System.Windows.Forms.Label();
+            this.OMinusNum = new System.Windows.Forms.Label();
+            this.ABMinusNum = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -73,6 +78,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.guna2GradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.OPlusProgress.SuspendLayout();
+            this.ABPlusProgress.SuspendLayout();
+            this.OMinusProgress.SuspendLayout();
+            this.ABMinusProgress.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -178,6 +187,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
             this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.DonorLbl);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -233,33 +243,11 @@
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Blue;
             this.guna2GradientPanel1.Controls.Add(this.label12);
-            this.guna2GradientPanel1.Controls.Add(this.label11);
             this.guna2GradientPanel1.Controls.Add(this.pictureBox2);
             this.guna2GradientPanel1.Location = new System.Drawing.Point(231, 189);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(254, 159);
             this.guna2GradientPanel1.TabIndex = 45;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(135, 38);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(116, 101);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 45;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(11, 17);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 42);
-            this.label11.TabIndex = 46;
-            this.label11.Text = "Donor";
             // 
             // label12
             // 
@@ -272,11 +260,32 @@
             this.label12.TabIndex = 47;
             this.label12.Text = "Donor";
             // 
+            // DonorLbl
+            // 
+            this.DonorLbl.AutoSize = true;
+            this.DonorLbl.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DonorLbl.ForeColor = System.Drawing.Color.White;
+            this.DonorLbl.Location = new System.Drawing.Point(93, 136);
+            this.DonorLbl.Name = "DonorLbl";
+            this.DonorLbl.Size = new System.Drawing.Size(118, 42);
+            this.DonorLbl.TabIndex = 46;
+            this.DonorLbl.Text = "Donor";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(135, 38);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(116, 101);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 45;
+            this.pictureBox2.TabStop = false;
+            // 
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel2.Controls.Add(this.label13);
-            this.guna2GradientPanel2.Controls.Add(this.label14);
+            this.guna2GradientPanel2.Controls.Add(this.TransferLbl);
             this.guna2GradientPanel2.Controls.Add(this.pictureBox3);
             this.guna2GradientPanel2.Location = new System.Drawing.Point(577, 189);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
@@ -294,16 +303,16 @@
             this.label13.TabIndex = 47;
             this.label13.Text = "Transfer";
             // 
-            // label14
+            // TransferLbl
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(11, 17);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(155, 42);
-            this.label14.TabIndex = 46;
-            this.label14.Text = "Transfer";
+            this.TransferLbl.AutoSize = true;
+            this.TransferLbl.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TransferLbl.ForeColor = System.Drawing.Color.White;
+            this.TransferLbl.Location = new System.Drawing.Point(11, 17);
+            this.TransferLbl.Name = "TransferLbl";
+            this.TransferLbl.Size = new System.Drawing.Size(155, 42);
+            this.TransferLbl.TabIndex = 46;
+            this.TransferLbl.Text = "Transfer";
             // 
             // pictureBox3
             // 
@@ -319,7 +328,7 @@
             // 
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel3.Controls.Add(this.label15);
-            this.guna2GradientPanel3.Controls.Add(this.label16);
+            this.guna2GradientPanel3.Controls.Add(this.UserLbl);
             this.guna2GradientPanel3.Controls.Add(this.pictureBox4);
             this.guna2GradientPanel3.Location = new System.Drawing.Point(934, 189);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
@@ -337,16 +346,16 @@
             this.label15.TabIndex = 47;
             this.label15.Text = "User";
             // 
-            // label16
+            // UserLbl
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(29, 17);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(91, 42);
-            this.label16.TabIndex = 46;
-            this.label16.Text = "User";
+            this.UserLbl.AutoSize = true;
+            this.UserLbl.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserLbl.ForeColor = System.Drawing.Color.White;
+            this.UserLbl.Location = new System.Drawing.Point(29, 17);
+            this.UserLbl.Name = "UserLbl";
+            this.UserLbl.Size = new System.Drawing.Size(91, 42);
+            this.UserLbl.TabIndex = 46;
+            this.UserLbl.Text = "User";
             // 
             // pictureBox4
             // 
@@ -363,70 +372,74 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(314, 494);
+            this.label17.Location = new System.Drawing.Point(312, 494);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(62, 37);
             this.label17.TabIndex = 48;
             this.label17.Text = "O+";
             // 
-            // guna2CircleProgressBar1
+            // OPlusProgress
             // 
-            this.guna2CircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2CircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleProgressBar1.Location = new System.Drawing.Point(249, 534);
-            this.guna2CircleProgressBar1.Minimum = 0;
-            this.guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
-            this.guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(186, 186);
-            this.guna2CircleProgressBar1.TabIndex = 49;
-            this.guna2CircleProgressBar1.Text = "guna2CircleProgressBar1";
+            this.OPlusProgress.Controls.Add(this.OPlusNum);
+            this.OPlusProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.OPlusProgress.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.OPlusProgress.ForeColor = System.Drawing.Color.White;
+            this.OPlusProgress.Location = new System.Drawing.Point(249, 534);
+            this.OPlusProgress.Minimum = 0;
+            this.OPlusProgress.Name = "OPlusProgress";
+            this.OPlusProgress.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.OPlusProgress.Size = new System.Drawing.Size(186, 186);
+            this.OPlusProgress.TabIndex = 49;
+            this.OPlusProgress.Text = "guna2CircleProgressBar1";
             // 
-            // guna2CircleProgressBar2
+            // ABPlusProgress
             // 
-            this.guna2CircleProgressBar2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2CircleProgressBar2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2CircleProgressBar2.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleProgressBar2.Location = new System.Drawing.Point(503, 534);
-            this.guna2CircleProgressBar2.Minimum = 0;
-            this.guna2CircleProgressBar2.Name = "guna2CircleProgressBar2";
-            this.guna2CircleProgressBar2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleProgressBar2.Size = new System.Drawing.Size(186, 186);
-            this.guna2CircleProgressBar2.TabIndex = 50;
-            this.guna2CircleProgressBar2.Text = "guna2CircleProgressBar2";
+            this.ABPlusProgress.Controls.Add(this.ABPlusNum);
+            this.ABPlusProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.ABPlusProgress.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ABPlusProgress.ForeColor = System.Drawing.Color.White;
+            this.ABPlusProgress.Location = new System.Drawing.Point(503, 534);
+            this.ABPlusProgress.Minimum = 0;
+            this.ABPlusProgress.Name = "ABPlusProgress";
+            this.ABPlusProgress.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.ABPlusProgress.Size = new System.Drawing.Size(186, 186);
+            this.ABPlusProgress.TabIndex = 50;
+            this.ABPlusProgress.Text = "guna2CircleProgressBar2";
             // 
-            // guna2CircleProgressBar3
+            // OMinusProgress
             // 
-            this.guna2CircleProgressBar3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2CircleProgressBar3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2CircleProgressBar3.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleProgressBar3.Location = new System.Drawing.Point(757, 534);
-            this.guna2CircleProgressBar3.Minimum = 0;
-            this.guna2CircleProgressBar3.Name = "guna2CircleProgressBar3";
-            this.guna2CircleProgressBar3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleProgressBar3.Size = new System.Drawing.Size(186, 186);
-            this.guna2CircleProgressBar3.TabIndex = 51;
-            this.guna2CircleProgressBar3.Text = "guna2CircleProgressBar3";
+            this.OMinusProgress.Controls.Add(this.OMinusNum);
+            this.OMinusProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.OMinusProgress.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.OMinusProgress.ForeColor = System.Drawing.Color.White;
+            this.OMinusProgress.Location = new System.Drawing.Point(757, 534);
+            this.OMinusProgress.Minimum = 0;
+            this.OMinusProgress.Name = "OMinusProgress";
+            this.OMinusProgress.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.OMinusProgress.Size = new System.Drawing.Size(186, 186);
+            this.OMinusProgress.TabIndex = 51;
+            this.OMinusProgress.Text = "guna2CircleProgressBar3";
             // 
-            // guna2CircleProgressBar4
+            // ABMinusProgress
             // 
-            this.guna2CircleProgressBar4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2CircleProgressBar4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2CircleProgressBar4.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleProgressBar4.Location = new System.Drawing.Point(997, 534);
-            this.guna2CircleProgressBar4.Minimum = 0;
-            this.guna2CircleProgressBar4.Name = "guna2CircleProgressBar4";
-            this.guna2CircleProgressBar4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleProgressBar4.Size = new System.Drawing.Size(186, 186);
-            this.guna2CircleProgressBar4.TabIndex = 52;
-            this.guna2CircleProgressBar4.Text = "guna2CircleProgressBar4";
+            this.ABMinusProgress.Controls.Add(this.ABMinusNum);
+            this.ABMinusProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.ABMinusProgress.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ABMinusProgress.ForeColor = System.Drawing.Color.White;
+            this.ABMinusProgress.Location = new System.Drawing.Point(997, 534);
+            this.ABMinusProgress.Minimum = 0;
+            this.ABMinusProgress.Name = "ABMinusProgress";
+            this.ABMinusProgress.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.ABMinusProgress.Size = new System.Drawing.Size(186, 186);
+            this.ABMinusProgress.TabIndex = 52;
+            this.ABMinusProgress.Text = "guna2CircleProgressBar4";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(507, 382);
+            this.label18.Location = new System.Drawing.Point(596, 382);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(186, 37);
             this.label18.TabIndex = 53;
@@ -437,33 +450,88 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(825, 494);
+            this.label19.Location = new System.Drawing.Point(819, 494);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(54, 37);
             this.label19.TabIndex = 54;
             this.label19.Text = "O-";
             // 
-            // label20
+            // Label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(560, 494);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(81, 37);
-            this.label20.TabIndex = 55;
-            this.label20.Text = "AB+";
+            this.Label20.AutoSize = true;
+            this.Label20.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label20.ForeColor = System.Drawing.Color.Red;
+            this.Label20.Location = new System.Drawing.Point(559, 494);
+            this.Label20.Name = "Label20";
+            this.Label20.Size = new System.Drawing.Size(81, 37);
+            this.Label20.TabIndex = 55;
+            this.Label20.Text = "AB+";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(1049, 494);
+            this.label21.Location = new System.Drawing.Point(1051, 494);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(73, 37);
             this.label21.TabIndex = 56;
             this.label21.Text = "AB-";
+            // 
+            // OPlusNum
+            // 
+            this.OPlusNum.AutoSize = true;
+            this.OPlusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OPlusNum.ForeColor = System.Drawing.Color.Red;
+            this.OPlusNum.Location = new System.Drawing.Point(48, 78);
+            this.OPlusNum.Name = "OPlusNum";
+            this.OPlusNum.Size = new System.Drawing.Size(86, 37);
+            this.OPlusNum.TabIndex = 57;
+            this.OPlusNum.Text = "Num";
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.Color.Red;
+            this.TotalLbl.Location = new System.Drawing.Point(650, 441);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(89, 37);
+            this.TotalLbl.TabIndex = 57;
+            this.TotalLbl.Text = "Total";
+            // 
+            // ABPlusNum
+            // 
+            this.ABPlusNum.AutoSize = true;
+            this.ABPlusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ABPlusNum.ForeColor = System.Drawing.Color.Red;
+            this.ABPlusNum.Location = new System.Drawing.Point(50, 75);
+            this.ABPlusNum.Name = "ABPlusNum";
+            this.ABPlusNum.Size = new System.Drawing.Size(86, 37);
+            this.ABPlusNum.TabIndex = 58;
+            this.ABPlusNum.Text = "Num";
+            // 
+            // OMinusNum
+            // 
+            this.OMinusNum.AutoSize = true;
+            this.OMinusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OMinusNum.ForeColor = System.Drawing.Color.Red;
+            this.OMinusNum.Location = new System.Drawing.Point(50, 75);
+            this.OMinusNum.Name = "OMinusNum";
+            this.OMinusNum.Size = new System.Drawing.Size(86, 37);
+            this.OMinusNum.TabIndex = 59;
+            this.OMinusNum.Text = "Num";
+            // 
+            // ABMinusNum
+            // 
+            this.ABMinusNum.AutoSize = true;
+            this.ABMinusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ABMinusNum.ForeColor = System.Drawing.Color.Red;
+            this.ABMinusNum.Location = new System.Drawing.Point(50, 75);
+            this.ABMinusNum.Name = "ABMinusNum";
+            this.ABMinusNum.Size = new System.Drawing.Size(86, 37);
+            this.ABMinusNum.TabIndex = 59;
+            this.ABMinusNum.Text = "Num";
             // 
             // Dashboard
             // 
@@ -471,14 +539,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
+            this.Controls.Add(this.Label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.guna2CircleProgressBar4);
-            this.Controls.Add(this.guna2CircleProgressBar3);
-            this.Controls.Add(this.guna2CircleProgressBar2);
-            this.Controls.Add(this.guna2CircleProgressBar1);
+            this.Controls.Add(this.ABMinusProgress);
+            this.Controls.Add(this.OMinusProgress);
+            this.Controls.Add(this.ABPlusProgress);
+            this.Controls.Add(this.OPlusProgress);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.guna2GradientPanel3);
             this.Controls.Add(this.guna2GradientPanel2);
@@ -489,7 +558,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
-            this.Text = "Dashboardcs";
+            this.Text = "Num";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -505,6 +574,14 @@
             this.guna2GradientPanel3.ResumeLayout(false);
             this.guna2GradientPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.OPlusProgress.ResumeLayout(false);
+            this.OPlusProgress.PerformLayout();
+            this.ABPlusProgress.ResumeLayout(false);
+            this.ABPlusProgress.PerformLayout();
+            this.OMinusProgress.ResumeLayout(false);
+            this.OMinusProgress.PerformLayout();
+            this.ABMinusProgress.ResumeLayout(false);
+            this.ABMinusProgress.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -529,23 +606,28 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label DonorLbl;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label TransferLbl;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label UserLbl;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label17;
-        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar1;
-        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar2;
-        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar3;
-        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar4;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar OPlusProgress;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar ABPlusProgress;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar OMinusProgress;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar ABMinusProgress;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label Label20;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label OPlusNum;
+        private System.Windows.Forms.Label TotalLbl;
+        private System.Windows.Forms.Label ABPlusNum;
+        private System.Windows.Forms.Label OMinusNum;
+        private System.Windows.Forms.Label ABMinusNum;
     }
 }
