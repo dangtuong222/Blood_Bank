@@ -28,28 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
-            this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.MyProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2CircleProgressBar1.SuspendLayout();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.MyProgress.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2CircleProgressBar1
+            // MyProgress
             // 
-            this.guna2CircleProgressBar1.Controls.Add(this.pictureBox1);
-            this.guna2CircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2CircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleProgressBar1.Location = new System.Drawing.Point(260, 95);
-            this.guna2CircleProgressBar1.Minimum = 0;
-            this.guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
-            this.guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(263, 263);
-            this.guna2CircleProgressBar1.TabIndex = 0;
-            this.guna2CircleProgressBar1.Text = "guna2CircleProgressBar1";
+            this.MyProgress.Controls.Add(this.pictureBox1);
+            this.MyProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.MyProgress.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.MyProgress.ForeColor = System.Drawing.Color.White;
+            this.MyProgress.Location = new System.Drawing.Point(260, 95);
+            this.MyProgress.Minimum = 0;
+            this.MyProgress.Name = "MyProgress";
+            this.MyProgress.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.MyProgress.Size = new System.Drawing.Size(263, 263);
+            this.MyProgress.TabIndex = 0;
+            this.MyProgress.Text = "guna2CircleProgressBar1";
             // 
             // pictureBox1
             // 
@@ -83,6 +85,10 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "WOM HOSPITAL";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -91,11 +97,11 @@
             this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2CircleProgressBar1);
+            this.Controls.Add(this.MyProgress);
             this.Name = "Splash";
             this.Text = "Splash";
             this.Load += new System.EventHandler(this.Splash_Load);
-            this.guna2CircleProgressBar1.ResumeLayout(false);
+            this.MyProgress.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -104,9 +110,10 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar1;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar MyProgress;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
