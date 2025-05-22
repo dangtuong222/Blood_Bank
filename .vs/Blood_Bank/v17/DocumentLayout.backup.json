@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|d:\\winform\\blood_bank\\ui\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|D:\\Winform\\Blood_Bank\\ui\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:ui\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|d:\\winform\\blood_bank\\ui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|D:\\Winform\\Blood_Bank\\ui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:ui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|d:\\winform\\blood_bank\\ui\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|D:\\Winform\\Blood_Bank\\ui\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4FC2A025-A099-4D66-8BCE-F0C89C5E0DD8}|Blood_Bank.csproj|solutionrelative:ui\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Winform\\Blood_Bank\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T13:31:20.059Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "UI\\Splash.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAqwBUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T13:28:44.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T13:28:44.735Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "ToolTip": "D:\\Winform\\Blood_Bank\\UI\\Splash.cs [Design]",
               "RelativeToolTip": "UI\\Splash.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T13:28:43.824Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-21T13:28:43.824Z"
             },
             {
               "$type": "Document",
@@ -75,8 +73,7 @@
               "ToolTip": "D:\\Winform\\Blood_Bank\\UI\\Dashboard.cs [Design]",
               "RelativeToolTip": "UI\\Dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T12:50:30.375Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-21T12:50:30.375Z"
             }
           ]
         }
