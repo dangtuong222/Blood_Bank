@@ -86,6 +86,7 @@
             this.label9.Size = new System.Drawing.Size(89, 29);
             this.label9.TabIndex = 7;
             this.label9.Text = "Logout";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel9
             // 
@@ -105,6 +106,7 @@
             this.label8.Size = new System.Drawing.Size(131, 29);
             this.label8.TabIndex = 6;
             this.label8.Text = "Dashboard";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel8
             // 
@@ -124,6 +126,7 @@
             this.label7.Size = new System.Drawing.Size(173, 29);
             this.label7.TabIndex = 6;
             this.label7.Text = "Blood Transfer";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel7
             // 
@@ -143,6 +146,7 @@
             this.label6.Size = new System.Drawing.Size(140, 29);
             this.label6.TabIndex = 6;
             this.label6.Text = "Blood Stock";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel6
             // 
@@ -162,6 +166,7 @@
             this.label5.Size = new System.Drawing.Size(148, 29);
             this.label5.TabIndex = 6;
             this.label5.Text = "View Patient";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel5
             // 
@@ -181,6 +186,7 @@
             this.label4.Size = new System.Drawing.Size(89, 29);
             this.label4.TabIndex = 6;
             this.label4.Text = "Patient";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel4
             // 
@@ -200,6 +206,7 @@
             this.label3.Size = new System.Drawing.Size(150, 29);
             this.label3.TabIndex = 6;
             this.label3.Text = "View Donors";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel3
             // 
@@ -219,6 +226,7 @@
             this.label2.Size = new System.Drawing.Size(80, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Donor";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 

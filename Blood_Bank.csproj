@@ -82,6 +82,7 @@
     <Compile Include="Service\DonateBloodService.cs" />
     <Compile Include="Service\DonorService.cs" />
     <Compile Include="Service\EmployeeService.cs" />
+    <Compile Include="Service\FormNavigator.cs" />
     <Compile Include="Service\LoginService.cs" />
     <Compile Include="Service\PatientService.cs" />
     <Compile Include="Service\ViewDonorsService.cs" />

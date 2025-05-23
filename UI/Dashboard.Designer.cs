@@ -39,13 +39,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DonorLbl = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label12 = new System.Windows.Forms.Label();
-            this.DonorLbl = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label13 = new System.Windows.Forms.Label();
@@ -57,18 +57,18 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.OPlusProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.OPlusNum = new System.Windows.Forms.Label();
             this.ABPlusProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.ABPlusNum = new System.Windows.Forms.Label();
             this.OMinusProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.OMinusNum = new System.Windows.Forms.Label();
             this.ABMinusProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.ABMinusNum = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.Label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.OPlusNum = new System.Windows.Forms.Label();
             this.TotalLbl = new System.Windows.Forms.Label();
-            this.ABPlusNum = new System.Windows.Forms.Label();
-            this.OMinusNum = new System.Windows.Forms.Label();
-            this.ABMinusNum = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -105,6 +105,7 @@
             this.label9.Size = new System.Drawing.Size(89, 29);
             this.label9.TabIndex = 7;
             this.label9.Text = "Logout";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -201,6 +202,18 @@
             this.panel1.Size = new System.Drawing.Size(214, 804);
             this.panel1.TabIndex = 41;
             // 
+            // DonorLbl
+            // 
+            this.DonorLbl.AutoSize = true;
+            this.DonorLbl.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DonorLbl.ForeColor = System.Drawing.Color.White;
+            this.DonorLbl.Location = new System.Drawing.Point(93, 136);
+            this.DonorLbl.Name = "DonorLbl";
+            this.DonorLbl.Size = new System.Drawing.Size(118, 42);
+            this.DonorLbl.TabIndex = 46;
+            this.DonorLbl.Text = "Donor";
+            this.DonorLbl.Click += new System.EventHandler(this.DonorLbl_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -259,17 +272,6 @@
             this.label12.Size = new System.Drawing.Size(76, 25);
             this.label12.TabIndex = 47;
             this.label12.Text = "Donor";
-            // 
-            // DonorLbl
-            // 
-            this.DonorLbl.AutoSize = true;
-            this.DonorLbl.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DonorLbl.ForeColor = System.Drawing.Color.White;
-            this.DonorLbl.Location = new System.Drawing.Point(93, 136);
-            this.DonorLbl.Name = "DonorLbl";
-            this.DonorLbl.Size = new System.Drawing.Size(118, 42);
-            this.DonorLbl.TabIndex = 46;
-            this.DonorLbl.Text = "Donor";
             // 
             // pictureBox2
             // 
@@ -392,6 +394,17 @@
             this.OPlusProgress.TabIndex = 49;
             this.OPlusProgress.Text = "guna2CircleProgressBar1";
             // 
+            // OPlusNum
+            // 
+            this.OPlusNum.AutoSize = true;
+            this.OPlusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OPlusNum.ForeColor = System.Drawing.Color.Red;
+            this.OPlusNum.Location = new System.Drawing.Point(48, 78);
+            this.OPlusNum.Name = "OPlusNum";
+            this.OPlusNum.Size = new System.Drawing.Size(86, 37);
+            this.OPlusNum.TabIndex = 57;
+            this.OPlusNum.Text = "Num";
+            // 
             // ABPlusProgress
             // 
             this.ABPlusProgress.Controls.Add(this.ABPlusNum);
@@ -405,6 +418,17 @@
             this.ABPlusProgress.Size = new System.Drawing.Size(186, 186);
             this.ABPlusProgress.TabIndex = 50;
             this.ABPlusProgress.Text = "guna2CircleProgressBar2";
+            // 
+            // ABPlusNum
+            // 
+            this.ABPlusNum.AutoSize = true;
+            this.ABPlusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ABPlusNum.ForeColor = System.Drawing.Color.Red;
+            this.ABPlusNum.Location = new System.Drawing.Point(50, 75);
+            this.ABPlusNum.Name = "ABPlusNum";
+            this.ABPlusNum.Size = new System.Drawing.Size(86, 37);
+            this.ABPlusNum.TabIndex = 58;
+            this.ABPlusNum.Text = "Num";
             // 
             // OMinusProgress
             // 
@@ -420,6 +444,17 @@
             this.OMinusProgress.TabIndex = 51;
             this.OMinusProgress.Text = "guna2CircleProgressBar3";
             // 
+            // OMinusNum
+            // 
+            this.OMinusNum.AutoSize = true;
+            this.OMinusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OMinusNum.ForeColor = System.Drawing.Color.Red;
+            this.OMinusNum.Location = new System.Drawing.Point(50, 75);
+            this.OMinusNum.Name = "OMinusNum";
+            this.OMinusNum.Size = new System.Drawing.Size(86, 37);
+            this.OMinusNum.TabIndex = 59;
+            this.OMinusNum.Text = "Num";
+            // 
             // ABMinusProgress
             // 
             this.ABMinusProgress.Controls.Add(this.ABMinusNum);
@@ -433,6 +468,17 @@
             this.ABMinusProgress.Size = new System.Drawing.Size(186, 186);
             this.ABMinusProgress.TabIndex = 52;
             this.ABMinusProgress.Text = "guna2CircleProgressBar4";
+            // 
+            // ABMinusNum
+            // 
+            this.ABMinusNum.AutoSize = true;
+            this.ABMinusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ABMinusNum.ForeColor = System.Drawing.Color.Red;
+            this.ABMinusNum.Location = new System.Drawing.Point(50, 75);
+            this.ABMinusNum.Name = "ABMinusNum";
+            this.ABMinusNum.Size = new System.Drawing.Size(86, 37);
+            this.ABMinusNum.TabIndex = 59;
+            this.ABMinusNum.Text = "Num";
             // 
             // label18
             // 
@@ -478,17 +524,6 @@
             this.label21.TabIndex = 56;
             this.label21.Text = "AB-";
             // 
-            // OPlusNum
-            // 
-            this.OPlusNum.AutoSize = true;
-            this.OPlusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OPlusNum.ForeColor = System.Drawing.Color.Red;
-            this.OPlusNum.Location = new System.Drawing.Point(48, 78);
-            this.OPlusNum.Name = "OPlusNum";
-            this.OPlusNum.Size = new System.Drawing.Size(86, 37);
-            this.OPlusNum.TabIndex = 57;
-            this.OPlusNum.Text = "Num";
-            // 
             // TotalLbl
             // 
             this.TotalLbl.AutoSize = true;
@@ -499,39 +534,6 @@
             this.TotalLbl.Size = new System.Drawing.Size(89, 37);
             this.TotalLbl.TabIndex = 57;
             this.TotalLbl.Text = "Total";
-            // 
-            // ABPlusNum
-            // 
-            this.ABPlusNum.AutoSize = true;
-            this.ABPlusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ABPlusNum.ForeColor = System.Drawing.Color.Red;
-            this.ABPlusNum.Location = new System.Drawing.Point(50, 75);
-            this.ABPlusNum.Name = "ABPlusNum";
-            this.ABPlusNum.Size = new System.Drawing.Size(86, 37);
-            this.ABPlusNum.TabIndex = 58;
-            this.ABPlusNum.Text = "Num";
-            // 
-            // OMinusNum
-            // 
-            this.OMinusNum.AutoSize = true;
-            this.OMinusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OMinusNum.ForeColor = System.Drawing.Color.Red;
-            this.OMinusNum.Location = new System.Drawing.Point(50, 75);
-            this.OMinusNum.Name = "OMinusNum";
-            this.OMinusNum.Size = new System.Drawing.Size(86, 37);
-            this.OMinusNum.TabIndex = 59;
-            this.OMinusNum.Text = "Num";
-            // 
-            // ABMinusNum
-            // 
-            this.ABMinusNum.AutoSize = true;
-            this.ABMinusNum.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ABMinusNum.ForeColor = System.Drawing.Color.Red;
-            this.ABMinusNum.Location = new System.Drawing.Point(50, 75);
-            this.ABMinusNum.Name = "ABMinusNum";
-            this.ABMinusNum.Size = new System.Drawing.Size(86, 37);
-            this.ABMinusNum.TabIndex = 59;
-            this.ABMinusNum.Text = "Num";
             // 
             // Dashboard
             // 

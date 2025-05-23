@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using Blood_Bank.Service;
+using Blood_Bank.Helpers;
 
 namespace Blood_Bank
 {
@@ -79,6 +80,17 @@ namespace Blood_Bank
         private void Dashboard_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void DonorLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            FormNavigator.NavigateTo(new Login(), this);
+
         }
     }
 }

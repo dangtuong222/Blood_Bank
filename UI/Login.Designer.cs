@@ -112,6 +112,7 @@
             this.label4.Size = new System.Drawing.Size(41, 37);
             this.label4.TabIndex = 8;
             this.label4.Text = "X";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // guna2Button1
             // 
@@ -152,6 +153,7 @@
             this.label6.Size = new System.Drawing.Size(184, 25);
             this.label6.TabIndex = 11;
             this.label6.Text = "Forgot Password";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -163,6 +165,7 @@
             this.label7.Size = new System.Drawing.Size(221, 25);
             this.label7.TabIndex = 12;
             this.label7.Text = "Create New Account";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Login
             // 
